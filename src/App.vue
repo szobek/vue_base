@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <test t="tesztelés">izé</test>
+    <test t="tesztelés 5"></test>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
 
   </div>
@@ -28,4 +28,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
