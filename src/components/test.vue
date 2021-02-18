@@ -1,5 +1,5 @@
 <template>
-  <div id="test">ez egy teszt -- {{t}}- <span v-if="isShowing">{{message}}</span>  <span v-on:click="isShowing=!isShowing">Klikk</span></div>
+  <div id="test">ez egy teszt -- {{t}}- <span v-if="isShowing">{{message}}</span>  <button v-on:click="isShowing=!isShowing">Klikk</button></div>
 </template>
 
 <script>
@@ -13,7 +13,10 @@ export default {
   },
   props: {
     t: String,
-    z: Object
+
+  },
+  created() {
+    console.log('indulás')
   },
   methods: {
     fn(){
